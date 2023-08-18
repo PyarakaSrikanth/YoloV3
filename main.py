@@ -1,5 +1,5 @@
 import pytorch_lightning as pl
-from dataloader.dataset import *
+from dataset import *
 from models.model import *
 from utils.utils import *
 
