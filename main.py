@@ -8,7 +8,7 @@ def runner(model, train_loader, val_loader, train_flag=True):
     if train_flag:
         trainer = pl.Trainer(
             precision=16,
-            device=-1,
+            devices=-1,
             max_epochs=cfg.NUM_EPOCHS,
             accelerator='gpu'
         )
