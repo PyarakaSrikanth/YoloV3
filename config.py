@@ -7,7 +7,7 @@ from albumentations.pytorch import ToTensorV2
 DATASET = 'PASCAL_VOC'
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 # seed_everything()  # If you want deterministic behavior
-NUM_WORKERS = 2
+NUM_WORKERS = 0
 BATCH_SIZE = 16
 IMAGE_SIZE = 416
 NUM_CLASSES = 20
