@@ -325,7 +325,7 @@ class YOLOv3LightningModel(pl.LightningModule):
                                                   max_lr=cfg.LEARNING_RATE,
                                                   epochs=self.trainer.max_epochs,
                                                   steps_per_epoch=len(self.train_dataloader()),
-                                                  pct_start=2 / self.trainer.max_epochs,
+                                                  pct_start=0.3,#2 / self.trainer.max_epochs,
                                                   div_factor=100,
                                                   final_div_factor=100,
                                                   three_phase=False,
